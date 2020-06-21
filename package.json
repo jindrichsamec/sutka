@@ -1,0 +1,32 @@
+{
+  "name": "sutka-occupancy",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Jindrich Samec <jindrich.samec@xjs.cz>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start:dev": "ts-node ./src -- $NODE_DEBUG_OPTION ./src",
+    "start:watch": "nodemon --exec ts-node  ./src -- $NODE_DEBUG_OPTION ./src",
+    "start": "node dist",
+    "test": "jest",
+    "jest:watch": "jest --watch",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "jsdom": "^16.2.2",
+    "mysql": "^2.18.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/jsdom": "^16.2.3",
+    "@types/mysql": "^2.15.14",
+    "@types/node-fetch": "^2.5.7",
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  }
+}
